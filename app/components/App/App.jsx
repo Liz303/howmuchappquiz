@@ -20,7 +20,9 @@ function App (props) {
   return (
     <main>
       <div className='content'>
-        { renderChildren(props) }
+        <div className='page-content'>
+          { renderChildren(props) }
+        </div>
       </div>
     </main>
   );

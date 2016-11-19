@@ -1,0 +1,20 @@
+.flex-wrapper {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column
+}
+
+.flex-item-center {
+  align-self: center;
+}
+
+.flex-start-wrap {
+  align-self: flex-start;
+}
+
+.flex-column-item-end {
+  margin-top: auto;
+  align-self: center;
+}

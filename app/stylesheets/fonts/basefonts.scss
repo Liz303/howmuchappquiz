@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,800');
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-size-base;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: $white;
+  font-size: $font-size-2;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  padding: .25em;
+  border-bottom: 2px solid $white;
+  transition: all .5s ease;
+  &:hover {
+    color: $pink;
+    border-bottom: 2px solid $pink;
+  }
+}
