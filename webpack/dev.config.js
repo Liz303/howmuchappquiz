@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var WebpackErrorNotificationPlugin = require('webpack-error-notification');
 var ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
-var hmrConfig = require('./hmr.config'); 
+var hmrConfig = require('./hmr.config');
 var modernizrConfig = require('./modernizr.config');
 var path = require('path');
 
@@ -37,19 +37,19 @@ var config = {
     loaders: [
       {
         test: /\.js?$|\.jsx?$/,
-        loaders: ['react-hot', 'babel?' + JSON.stringify(hmrConfig), 'eslint'],
+        loaders: ['babel?' + JSON.stringify(hmrConfig), 'eslint'],
         exclude: /node_modules/
       },
       {
         test: /\.scss$/,
         loaders: ['style', 'css', 'postcss', 'sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true']
       },
-      { 
-        test: /\.(jpg|jpeg|png|gif|svg)$/, 
+      {
+        test: /\.(jpg|jpeg|png|gif|svg)$/,
         loaders: ['url?limit=25000', 'img']
       },
       {
-        test: /\.(eot|woff|woff2|ttf|svg)$/, 
+        test: /\.(eot|woff|woff2|ttf|svg)$/,
         loader: 'url?limit=20000'
       }
     ]
