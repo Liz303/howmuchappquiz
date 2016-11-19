@@ -1,12 +1,16 @@
 import React, { PropTypes } from 'react';
-import Checkbox from '../Checkbox';
+import { Link } from 'react-router';
+import RadioGroup from '../RadioGroup';
 
 function Type () {
-
+  let data = [{value: 'cms'}, {value: 'ecommerce'}];
   return (
     <div className="text-container flex-wrapper flex-column">
-      <Checkbox> <h1> cms </h1></Checkbox>
-      <Checkbox> <h1> ecommerce </h1> </Checkbox>
+      <h1> What type of app are you building? </h1>
+      <RadioGroup data={data}/>
+      <div className="flex-column-item-end">
+        <Link to="/type"> Next ➪</Link>
+      </div>
     </div>
   );
 }

@@ -30,5 +30,5 @@ export default class Checkbox extends React.Component {
 }
 
 Checkbox.propTypes = {
-  children: React.PropTypes.object
+  children: React.PropTypes.array
 };
