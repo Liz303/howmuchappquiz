@@ -1,10 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 function Main () {
   return (
     <div className='page-content'>
-      <h2>Home Page</h2>
-      <p>This is a boilerplate for Universal JS Apps using Webpack, React, ES6, Sass, and prepared to be deployed via Docker.</p>
+      <div className="text-container flex-wrapper flex-column">
+        <h1> How much should I spend on a web app? </h1>
+        <div className="flex-column-item-end">
+          <Link to="#"> Get Started </Link>
+        </div>
+      </div>
     </div>
   );
 }

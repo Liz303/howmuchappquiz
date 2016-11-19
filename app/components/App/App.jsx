@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActions } from '../../actions';
-import Header from '../Header';
+// import Header from '../Header';
 
 if (process.env.BROWSER) {
   require('../../stylesheets/defaults/content.scss');
@@ -19,7 +19,6 @@ function renderChildren (props) {
 function App (props) {
   return (
     <main>
-      <Header />
       <div className='content'>
         { renderChildren(props) }
       </div>
