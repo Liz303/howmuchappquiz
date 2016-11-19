@@ -3,9 +3,13 @@
 
 @import 'defaults/base-global.scss';
 @import 'defaults/typography.scss';
-@import 'fonts/basefonts.scss';
 @import 'defaults/flex.scss';
-@import 'modules/Page.scss';
 @import 'defaults/content.scss';
+
+@import 'fonts/basefonts.scss';
+
+@import 'modules/Page.scss';
+@import 'modules/Checkbox.scss';
+
 
 /********************************************************** Viewport */
