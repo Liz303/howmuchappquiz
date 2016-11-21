@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActions } from '../../actions';
+import MoneyRain from '../MoneyRain';
 // import Header from '../Header';
 
 if (process.env.BROWSER) {
@@ -19,6 +20,7 @@ function renderChildren (props) {
 function App (props) {
   return (
     <main>
+      <MoneyRain/>
       <div className='content'>
         <div className='page-content'>
           { renderChildren(props) }
