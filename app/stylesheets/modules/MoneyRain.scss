@@ -1,0 +1,32 @@
+.drop {
+  // background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
+  // background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+	position: absolute;
+	-webkit-animation: fall 10s linear infinite;
+  -moz-animation: fall 10s linear infinite;
+  color: $orange;
+  font-size: $font-size-1;
+  font-weight: 600;
+}
+
+.rain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* animate the drops*/
+@keyframes fall {
+  from {margin-top: 0%;}
+	to {margin-top: calc(100% + 74px);}
+}
+@-webkit-keyframes fall {
+  from {margin-top: 0%;}
+	to {margin-top: calc(100% + 74px);}
+}
+@-moz-keyframes fall {
+  from {margin-top: 0%;}
+	to {margin-top: calc(100% + 74px);}
+}
