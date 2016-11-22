@@ -6,7 +6,7 @@
 //               font-size : line-height
 @mixin heading-1() { // 50 : 56
   font-size: $font-size-1;
-  line-height: get-multiplier(56, $font-size-1);
+  line-height: get-multiplier(70, $font-size-1);
 }
 
 @mixin heading-2() { // 32 : 36

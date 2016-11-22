@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
+import quiz from './quiz';
 
 const reducers = {
-  counter
+  quiz
 };
 
 export default combineReducers(reducers);

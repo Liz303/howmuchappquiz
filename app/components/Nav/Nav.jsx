@@ -9,7 +9,6 @@ function Nav () {
           <IndexLink to={'/'} className='nav-item-link' activeClassName='active'>Home</IndexLink>
         </li>
         <li className='nav-list-item'>
-          <Link to={'/counter'} className='nav-item-link' activeClassName='active'>Counter</Link>
         </li>
       </ul>
     </nav>

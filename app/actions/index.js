@@ -1,8 +1,8 @@
 import { bindActionCreators } from 'redux';
-import * as CounterActions from './counter';
+import * as AllActions from './all_action';
 
 export function bindActions (dispatch) {
   return {
-    counter: bindActionCreators(CounterActions, dispatch)
+    quiz: bindActionCreators(AllActions, dispatch)
   };
 }
