@@ -7,32 +7,32 @@ export default class MoneyRain extends React.Component {
       winWidth: this.defaultWidth,
       winHeight: this.defaultHeight
     };
-    this.resizeHandler = this.resizeHandler.bind(this);
+    // this.resizeHandler = this.resizeHandler.bind(this);
   }
 
-  componentDidMount() {
-    if (window){
-      window.addEventListener('resize', this.resizeHandler);
-    }
-  }
-
-  componentWillUnmount() {
-    if (window) {
-      window.removeEventListener('resize', this.resizeHandler);
-    }
-  }
+  // componentDidMount() {
+  //   if (window){
+  //     window.addEventListener('resize', this.resizeHandler);
+  //   }
+  // }
+  //
+  // componentWillUnmount() {
+  //   if (window) {
+  //     window.removeEventListener('resize', this.resizeHandler);
+  //   }
+  // }
 
   get defaultWidth() {
-    if (window) {
-      return window.innerWidth;
-    }
+    // if (window) {
+    //   return window.innerWidth;
+    // }
     return 1600;
   }
 
   get defaultHeight() {
-    if (window) {
-      return window.innerHeight;
-    }
+    // if (window) {
+    //   return window.innerHeight;
+    // }
     return 1200;
   }
 

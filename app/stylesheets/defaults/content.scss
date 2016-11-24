@@ -17,7 +17,7 @@ main {
   padding: 3em 0 0 3.5em;
   z-index: 1;
   @include mq($S) {
-    max-width: 960px;
+    max-width: 775px;
   }
   .page-content {
     width: 100%;
@@ -25,8 +25,8 @@ main {
     outline: 2px solid $black;
     outline-offset: 1.5em;
     .text-container {
-      padding: 1.5em 1.5em 1.5em .5em;
-      height: 80%;
+      padding: .5em 1.5em 1.5em .5em;
+      height: 85%;
     }
   }
 }

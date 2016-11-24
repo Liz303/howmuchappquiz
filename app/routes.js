@@ -11,8 +11,8 @@ export default (
   <Route path="/" component={App}>
     <IndexRoute component={Main} />
     <Route path="/type" component={Type}/>
-    <Route path="/pages" commponent={Pages} />
-    <Route path="/products" commponent={Product} />
+    <Route path="/pages" component={Pages} />
+    <Route path="/products" component={Product} />
     <Route path="/*" component={NoMatch} />
   </Route>
 );

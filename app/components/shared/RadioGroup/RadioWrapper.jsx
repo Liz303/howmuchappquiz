@@ -5,8 +5,12 @@ export default class RadioWrapper extends React.Component {
   constructor(...args){
     super(...args);
     this.state = {
-      selectedButton: null
+      selectedButton: this.defaultSelectedIfSet
     };
+  }
+
+  get defaultSelectedIfSet() {
+    return this.props.selectedButton;
   }
 
   updateSelected(e) {
@@ -44,5 +48,6 @@ export default class RadioWrapper extends React.Component {
 
 RadioWrapper.propTypes = {
   data: React.PropTypes.array,
-  selectAction: React.PropTypes.func
+  selectAction: React.PropTypes.func,
+  selectedButton: React.PropTypes.string
 };

@@ -5,7 +5,7 @@ import RadioGroup from '../shared/RadioGroup';
 export default class Type extends React.Component {
   constructor(...args){
     super(...args);
-    this.data = [{value: 'cms'}, {value: 'ecommerce'}];
+    this.data = [{value: 'brochure'}, {value: 'store'}];
   }
 
   selectApp(selected) {
@@ -13,9 +13,9 @@ export default class Type extends React.Component {
   }
 
   renderSelectOrNext() {
-    if (this.props.state.quiz.selectedType == 'cms'){
+    if (this.props.state.quiz.selectedType === 'brochure'){
       return <Link to='/pages'> Next ➪</Link>;
-    } else if (this.props.state.quiz.selectedType === 'ecommerce') {
+    } else if (this.props.state.quiz.selectedType === 'store') {
       return <Link to='/products'> Next ➪</Link>;
     }
   }
@@ -25,6 +25,7 @@ export default class Type extends React.Component {
       <div className="text-container flex-wrapper flex-column">
         <h1> What type of app are you building? </h1>
         <RadioGroup
+          selectedButton={this.props.state.quiz.selectedType}
           data={this.data}
           selectAction={this.selectApp.bind(this)}/>
         <div className="flex-column-item-end">
