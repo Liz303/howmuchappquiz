@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Type from './components/Type';
 import Pages from './components/Pages';
 import Product from './components/Product';
+import Features from './components/Features';
 import NoMatch from './components/NoMatch';
 
 export default (
@@ -13,6 +14,7 @@ export default (
     <Route path="/type" component={Type}/>
     <Route path="/pages" component={Pages} />
     <Route path="/products" component={Product} />
+    <Route path="/features" component={Features} />
     <Route path="/*" component={NoMatch} />
   </Route>
 );

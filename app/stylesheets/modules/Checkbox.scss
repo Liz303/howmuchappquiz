@@ -22,7 +22,7 @@
         content: '';
         position: absolute;
         left: 1em;
-        bottom: 1.25em;
+        bottom: 0.9em;
         width: 1em;
         height: 2.25em;
         border: solid $black;
@@ -33,5 +33,8 @@
   }
   .checkbox-name {
     margin-left: 1.5em;
+		h1 {
+			font-size: $font-size-3;
+		}
   }
 }
