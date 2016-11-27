@@ -36,22 +36,25 @@ export default class MoneyRain extends React.Component {
     return 1200;
   }
 
-  randRange( minNum, maxNum ) {
-    return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+  randRange( val ) {
+    return Math.random() * val | 0;
+    // return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
   }
 
-  resizeHandler() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
-  }
+  // resizeHandler() {
+  //   this.setState({ width: window.innerWidth, height: window.innerHeight });
+  // }
 
   renderMonies() {
     let moneyArray=[];
-    for( let i=1; i<50; i++ ) {
-      let dropLeft = this.randRange(0, this.state.winWidth);
-      let dropTop = this.randRange(-1000, 0);
+    for( let i=1; i<16; i++ ) {
+      let dropLeft = this.randRange(100) + '%';
+      let dropTop = -this.randRange(20) + '%';
+      let dropDuration = (Math.random()*2)+0.5 + 's';
       let moneyStyle = {
         left: dropLeft,
-        top: dropTop
+        top: dropTop,
+        animationDuration: dropDuration
       };
       moneyArray.push(
         <div key={i} style={moneyStyle} className="drop"> $ </div>

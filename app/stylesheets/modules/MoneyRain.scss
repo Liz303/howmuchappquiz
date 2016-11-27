@@ -2,6 +2,7 @@
   // background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
   // background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
 	position: absolute;
+  animation: fall 10s linear infinite;
 	-webkit-animation: fall 10s linear infinite;
   -moz-animation: fall 10s linear infinite;
   color: $orange;
@@ -19,14 +20,17 @@
 
 /* animate the drops*/
 @keyframes fall {
-  from {margin-top: 0%;}
-	to {margin-top: calc(100% + 74px);}
+  100% {
+    top: 100%;
+  }
 }
 @-webkit-keyframes fall {
-  from {margin-top: 0%;}
-	to {margin-top: calc(100% + 74px);}
+  100% {
+    top: 100%;
+  }
 }
 @-moz-keyframes fall {
-  from {margin-top: 0%;}
-	to {margin-top: calc(100% + 74px);}
+  100% {
+    top: 100%;
+  }
 }
