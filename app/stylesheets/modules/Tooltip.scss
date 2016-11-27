@@ -1,0 +1,46 @@
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  color: $white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.tooltip {
+  position: absolute;
+  right: -13%;
+  top: -139px;
+  border-width: 0px 93px 151.2px;
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-color: transparent transparent $gold transparent;
+  float: left;
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  font-size: 10px;
+
+  .tooltip-content {
+    text-align: center;
+    color: $white;
+    width: 100px;
+    top: 86px;
+    left: -50px;
+    position: absolute;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+  }
+}
