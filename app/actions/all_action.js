@@ -3,7 +3,8 @@ export const SELECT_PRODUCT_RANGE = 'SELECT_PRODUCTS_RANGE';
 export const SELECT_PAGE_RANGE = 'SELECT_PAGE_RANGE';
 export const SELECT_REVENUE_RANGE = 'SELECT_REVENUE_RANGE';
 export const SELECT_FEATURES = 'SELECT_FEATURES';
-export const SELECT_STORAGE  = 'SELECT_STORAGE';
+export const SELECT_ANALYTICS  = 'SELECT_ANALYTICS';
+export const SELECT_TRACKING  = 'SELECT_TRACKING';
 
 export function selectAppType(appType) {
   return {
@@ -37,6 +38,20 @@ export function selectStorage(storage) {
   return {
     type: SELECT_REVENUE_RANGE,
     storage
+  };
+}
+
+export function selectTracking(bool) {
+  return {
+    type: SELECT_TRACKING,
+    bool
+  };
+}
+
+export function selectAnalytics(analytics) {
+  return {
+    type: SELECT_ANALYTICS,
+    analytics
   };
 }
 

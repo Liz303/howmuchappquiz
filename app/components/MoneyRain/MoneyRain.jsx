@@ -48,7 +48,7 @@ export default class MoneyRain extends React.Component {
     let moneyArray=[];
     for( let i=1; i<50; i++ ) {
       let dropLeft = this.randRange(0, this.state.winWidth);
-      let dropTop = this.randRange(-1000, this.state.winHeight);
+      let dropTop = this.randRange(-1000, 0);
       let moneyStyle = {
         left: dropLeft,
         top: dropTop

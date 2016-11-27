@@ -5,7 +5,7 @@ import RadioGroup from '../shared/RadioGroup';
 export default class Revenue extends React.Component {
   constructor(...args) {
     super(...args);
-    this.data = [{value: '0-$50K'}, {value: '$50K'}, {value: '$1M'}, {value: '$100M+'}];
+    this.data = [{value: '0-$50K'}, {value: '$50K - $1M'}, {value: '$1M +'}, {value: '$100M+'}];
   }
 
   selectRevenueRange(selected) {

@@ -14,24 +14,25 @@ export default class Features extends React.Component {
 
   renderSelectOrNext() {
   //  if (this.props.state.quiz.selectedFeaturesRange && this.props.state.quiz.selectedFeaturesRange !== null){
-      return <Link to="/pages"> Next ➪ </Link>;
+    return <Link to="/results"> Next ➪ </Link>;
     // }
   }
 
   render() {
     return (
       <div className="text-container flex-wrapper flex-column">
-        <h1> Which of the following features does your app have? </h1>
+        <h1> Choose the features your app should have? </h1>
         <div className="flex-wrapper flex-column flex-wrap">
           <div className="flex-half">
             <Checkbox> <h1> calendering / events </h1></Checkbox>
             <Checkbox> <h1> api integrations </h1> </Checkbox>
-            <Checkbox> <h1> calendering </h1></Checkbox>
+            <Checkbox> <h1> advertising </h1></Checkbox>
           </div>
           <div className="flex-half">
-            <Checkbox> <h1> advertising </h1> </Checkbox>
             <Checkbox> <h1> custom design </h1> </Checkbox>
-          </div>
+            <Checkbox> <h1> blogging </h1> </Checkbox>
+            <Checkbox> <h1> other </h1></Checkbox>
+        </div>
         </div>
         <div className="flex-column-item-end">
           {this.renderSelectOrNext()}

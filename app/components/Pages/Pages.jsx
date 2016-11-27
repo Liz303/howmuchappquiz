@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import RadioGroup from '../shared/RadioGroup';
+import Tooltip from '../shared/Tooltip';
 
 export default class Pages extends React.Component {
   constructor(...args) {
@@ -19,9 +20,10 @@ export default class Pages extends React.Component {
   }
 
   render() {
+    let tooltipInfo = 'The number of unique templates your app will have.';
     return (
       <div className="text-container flex-wrapper flex-column">
-        <h1> How many unique pages will your app have? </h1>
+        <h1> How many unique <Tooltip info={tooltipInfo}> pages </Tooltip> will your app have? </h1>
         <RadioGroup
           data={this.data}
           selectAction={this.selectApp.bind(this)}/>
