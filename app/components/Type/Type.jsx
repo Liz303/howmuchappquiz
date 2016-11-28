@@ -1,11 +1,13 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import RadioGroup from '../shared/RadioGroup';
-
 export default class Type extends React.Component {
   constructor(...args){
     super(...args);
-    this.data = [{value: 'brochure'}, {value: 'store'}];
+    this.data = [
+      {value: 'brochure', tooltip: 'A basic information site.'},
+      {value: 'store'}
+    ];
   }
 
   selectApp(selected) {

@@ -14,15 +14,15 @@
 	opacity: 0;
   }
   .styled-checkbox {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     border: 3px solid $white;
     &.checked {
       &:after {
         content: '';
         position: absolute;
-        left: 1em;
-        bottom: 0.9em;
+				left: .7em;
+    		bottom: 0.7em;
         width: 1em;
         height: 2.25em;
         border: solid $black;

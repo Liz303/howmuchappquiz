@@ -30,6 +30,6 @@ export default class Tooltip extends React.Component {
 
 Tooltip.propTypes = {
   state: PropTypes.object,
-  children: PropTypes.string,
+  children: PropTypes.object,
   info: PropTypes.string
 };

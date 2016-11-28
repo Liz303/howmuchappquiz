@@ -9,6 +9,7 @@ import Features from './components/Features';
 import Revenue from './components/Revenue';
 import Results from './components/Results';
 import UserTracking from './components/UserTracking';
+import CMS from './components/CMS';
 import NoMatch from './components/NoMatch';
 
 export default (
@@ -21,6 +22,7 @@ export default (
     <Route path="/revenue" component={Revenue} />
     <Route path="/results" component={Results} />
     <Route path="/usertracking" component={UserTracking} />
+    <Route path="/cms" component={CMS} />
   <Route path="/*" component={NoMatch} />
   </Route>
 );

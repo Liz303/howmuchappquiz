@@ -3,8 +3,9 @@ export const SELECT_PRODUCT_RANGE = 'SELECT_PRODUCTS_RANGE';
 export const SELECT_PAGE_RANGE = 'SELECT_PAGE_RANGE';
 export const SELECT_REVENUE_RANGE = 'SELECT_REVENUE_RANGE';
 export const SELECT_FEATURES = 'SELECT_FEATURES';
-export const SELECT_ANALYTICS  = 'SELECT_ANALYTICS';
+export const SELECT_CMS  = 'SELECT_CMS';
 export const SELECT_TRACKING  = 'SELECT_TRACKING';
+export const CLEAR_RESULTS = 'CLEAR_RESULTS';
 
 export function selectAppType(appType) {
   return {
@@ -34,24 +35,17 @@ export function selectRevenueRange(revenueRange) {
   };
 }
 
-export function selectStorage(storage) {
-  return {
-    type: SELECT_REVENUE_RANGE,
-    storage
-  };
-}
-
-export function selectTracking(bool) {
+export function selectTracking(tracking) {
   return {
     type: SELECT_TRACKING,
-    bool
+    tracking
   };
 }
 
-export function selectAnalytics(analytics) {
+export function selectCms(cms) {
   return {
-    type: SELECT_ANALYTICS,
-    analytics
+    type: SELECT_CMS,
+    cms
   };
 }
 
@@ -62,5 +56,11 @@ export function selectFeatures(apiIntegration, calendering, blogging, interactiv
     calendering,
     blogging,
     interactivity
+  };
+}
+
+export function clearResults() {
+  return {
+    type: CLEAR_RESULTS
   };
 }

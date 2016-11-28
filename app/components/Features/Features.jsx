@@ -13,9 +13,11 @@ export default class Features extends React.Component {
   }
 
   renderSelectOrNext() {
-  //  if (this.props.state.quiz.selectedFeaturesRange && this.props.state.quiz.selectedFeaturesRange !== null){
-    return <Link to="/results"> Next ➪ </Link>;
-    // }
+    if (this.props.state.quiz.selectedType == 'store'){
+      return <Link to="/results"> Next ➪ </Link>;
+    } else if (this.props.state.quiz.selectedType == 'brochure') {
+      return <Link to="/usertracking"> Next ➪ </Link>;
+    }
   }
 
   render() {

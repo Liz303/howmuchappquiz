@@ -25,8 +25,10 @@ export default class RadioWrapper extends React.Component {
 
   renderRadioButtons() {
     return this.props.data.map( (button, i) => {
+      console.log(button);
       return (
         <RadioButton
+          tooltip={button.tooltip || null}
           key={i}
           value={button.value}
           selectedButton={this.state.selectedButton}
