@@ -6,6 +6,9 @@
   }
   .radio-button {
     color: $black;
+    @include mq($S) {
+      margin-bottom: 1.5em;
+    }
   }
 }
 .radio-button-wrap {

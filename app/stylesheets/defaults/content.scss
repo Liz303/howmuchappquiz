@@ -12,21 +12,28 @@ main {
   align-self: center;
   width: 70%;
   height: 60%;
+  min-height: 360px;
   background-color: $turq;
   display: flex;
   padding: 3.5em 0 0 3.5em;
   z-index: 1;
   @include mq($S) {
-    max-width: 775px;
+    padding: 1.5em 0 0 1.5em;
   }
   .page-content {
     width: 100%;
     align-self: flex;
     outline: 4px solid $black;
     outline-offset: 1.5em;
+    @include mq($S) {
+      outline-offset: .5em;
+    }
     .text-container {
       padding: .5em 1.5em 1.5em .5em;
       height: 88%;
+      @include mq($S) {
+        height: 93%;
+      }
     }
   }
 }
