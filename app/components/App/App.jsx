@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActions } from '../../actions';
 import MoneyRain from '../MoneyRain';
-// import Header from '../Header';
 
 if (process.env.BROWSER) {
   require('../../stylesheets/defaults/content.scss');
