@@ -4,10 +4,11 @@ import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import configureStore from './store/configureStore';
+import './stylesheets/app.scss';
 
-if (process.env.BROWSER) {
-  require('./stylesheets/base.scss');
-}
+// if (process.env.BROWSER) {
+//   require('./stylesheets/base.scss');
+// }
 
 console.log('%c App Started', 'color:green');
 
@@ -18,6 +19,6 @@ render(
     <Router history={browserHistory}>
     {routes}
     </Router>
-  </Provider>, 
+  </Provider>,
   document.getElementById('root')
 );
