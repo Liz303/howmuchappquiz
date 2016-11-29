@@ -23,7 +23,7 @@ export default class Pages extends React.Component {
     let tooltipInfo = 'The number of unique templates your app will have.';
     return (
       <div className="text-container flex-wrapper flex-column">
-        <h1> How many unique <Tooltip info={tooltipInfo}> pages </Tooltip> will your app have? </h1>
+        <h1 className="span-wrap"> How many unique <Tooltip info={tooltipInfo}> pages </Tooltip> will your app have? </h1>
         <RadioGroup
           data={this.data}
           selectAction={this.selectApp.bind(this)}/>

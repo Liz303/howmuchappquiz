@@ -41,7 +41,7 @@ export default class RadioWrapper extends React.Component {
 
   render() {
     return (
-      <div className="radio-button-wrap">
+      <div className="radio-button-wrap align-center">
           {this.renderRadioButtons()}
       </div>
     );

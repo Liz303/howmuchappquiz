@@ -1,3 +1,6 @@
+@import '../variables.scss';
+@import '../mixins/mq.scss';
+
 .checkbox {
 	position: relative;
 	display: block;
@@ -7,7 +10,10 @@
   -webkit-flex-direction: row;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+	@include mq($S) {
+		font-size: 3vmin;
+	}
   input {
 	position: absolute;
 	z-index: -1;
@@ -54,6 +60,9 @@
     }
 		h1 {
 			font-size: $font-size-3;
+			@include mq($S) {
+				font-size: 2.5vmin;
+			};
 		}
   }
 }

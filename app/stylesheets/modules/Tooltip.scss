@@ -14,14 +14,21 @@
 .radio-button-wrap {
   .tooltip-wrapper {
     .tooltip {
-      right: -40%;
+      right: -35%;
       top: -157px;
     }
   }
 }
+
+.span-wrap {
+  span:first-child{
+    float: left;
+  }
+}
+
 .tooltip {
   position: absolute;
-  right: -33%;
+  right: 0%;
   top: -148px;
   border-width: 0px 93px 151.2px;
   width: 0px;

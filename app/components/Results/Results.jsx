@@ -7,7 +7,6 @@ export default class Results extends React.Component {
     calendering, blogging, advertising, design, other, selectedRevenueRange,
     userTracking, cms } = this.props.state.quiz;
     let defaultCost = 5000;
-    console.log(this.props.state.quiz);
     if ( selectedType === 'store') {
       defaultCost += 10000;
       if ( selectedProductRange === '50 - 100') { defaultCost += 5000; }
@@ -30,7 +29,7 @@ export default class Results extends React.Component {
     if ( other === true ) { defaultCost += 5000; }
     if (defaultCost) {
       return (
-        <h1 className="flex-center"> $ {defaultCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} - $ {(defaultCost + 20000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</h1>
+        <h1 className="flex-center total"> $ {defaultCost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} - $ {(defaultCost + 20000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</h1>
       );
     }
   }
