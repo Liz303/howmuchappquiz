@@ -19,6 +19,9 @@
     .tooltip {
       right: -47%;
       top: calc(-100% - 62px);
+      .tooltip-content {
+        top: 100px;
+      }
     }
   }
 }
@@ -60,7 +63,7 @@
     text-align: center;
     color: $white;
     width: 100px;
-    top: 114px;
+    top: 82px;
     left: -50px;
     position: absolute;
     transform:rotate(180deg);
