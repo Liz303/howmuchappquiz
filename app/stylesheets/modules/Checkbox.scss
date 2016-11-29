@@ -24,8 +24,9 @@
     height: 1.5em;
     border: 3px solid $white;
 		@include mq($S) {
-      width: .5em;
-			height: .5em;
+      width: 1em;
+			height: 1em;
+			border: 2px solid $white;
     }
     &.checked {
       &:after {
@@ -40,7 +41,8 @@
         transform: rotate(45deg);
 				left: .45em;
 				@include mq($S) {
-					bottom: 0.3em;
+					bottom: 0.8em;
+					left: .5em;
 					width: .25em;
 					height: .75em;
 					border: solid #29041a;
@@ -55,7 +57,7 @@
       margin-left: .5em;
 			margin-right: .75em;
 			h1 {
-				font-size: .5em !important;
+				font-size: 1.5em !important;
 			}
     }
 		h1 {

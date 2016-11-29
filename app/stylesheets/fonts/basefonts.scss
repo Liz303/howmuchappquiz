@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,800');
+@import '../variables.scss';
+@import '../mixins/mq.scss';
 
 html, body {
   font-family: 'Raleway', sans-serif;
@@ -36,6 +38,12 @@ a {
   }
   &.hide {
     opacity: 0;
+  }
+  @include mq($S) {
+    font-size: 7vmin;
+    &.restart-link {
+      font-size: 5vmin;
+    }
   }
 }
 

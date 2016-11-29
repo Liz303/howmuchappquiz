@@ -42,7 +42,7 @@ export default class Results extends React.Component {
           {this.getTotal()}
         </div>
         <div className="flex-column-item-end">
-          <Link to="/" onClick={() => this.props.actions.quiz.clearResults()}>
+          <Link className="restart-link" to="/" onClick={() => this.props.actions.quiz.clearResults()}>
             Get another quote
           </Link>
         </div>

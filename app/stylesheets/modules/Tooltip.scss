@@ -16,7 +16,7 @@
   .tooltip-wrapper {
     .tooltip {
       right: -28%;
-      bottom: 100%;
+      top: calc(-100% - 45px);
     }
   }
 }

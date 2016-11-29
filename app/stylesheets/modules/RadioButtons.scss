@@ -32,9 +32,9 @@
       transform: scale(1);
       font-weight: 600;
       @include mq($S) {
-        width: 5em;
-        height: 5em;
-        font-size: 1em;
+        width: 6em;
+        height: 6em;
+        font-size: .75em;
         margin-bottom: 10px;
       }
       &:hover {

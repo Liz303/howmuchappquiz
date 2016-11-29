@@ -10,6 +10,7 @@
     padding: 0;
     @include mq($S) {
       font-size: 6vmin;
+      line-height: 1.25;
     }
   }
   .align-center {
@@ -34,6 +35,9 @@
 .flex-half {
   flex: 1 1 auto;
   align-self: center;
+  @include mq($S) {
+    flex: 100%;
+  }
 }
 
 .flex-column {
@@ -52,7 +56,7 @@
 }
 
 h1.flex-center {
-  font-size: 11vmin !important;
+  font-size: 12vmin !important;
   align-self: center;
 }
 
