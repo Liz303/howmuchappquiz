@@ -24,11 +24,15 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
-  padding: .25em;
+  padding: .25em .5em;
   border: 4px solid $white;
   transition: all .5s ease;
   &:hover {
     color: $orange;
     border: 4px solid $orange;
   }
+}
+
+strong {
+  font-weight: 600;
 }

@@ -24,7 +24,7 @@ export default class Features extends React.Component {
     return (
       <div className="text-container flex-wrapper flex-column">
         <h1> Choose the features your app should have? </h1>
-        <div className="flex-wrapper flex-column flex-wrap">
+        <div className="align-center flex-wrapper flex-row flex-wrap">
           <div className="flex-half">
             <Checkbox> <h1> calendering / events </h1></Checkbox>
             <Checkbox> <h1> api integrations </h1> </Checkbox>
@@ -34,7 +34,7 @@ export default class Features extends React.Component {
             <Checkbox> <h1> custom design </h1> </Checkbox>
             <Checkbox> <h1> blogging </h1> </Checkbox>
             <Checkbox> <h1> other </h1></Checkbox>
-        </div>
+          </div>
         </div>
         <div className="flex-column-item-end">
           {this.renderSelectOrNext()}

@@ -1,5 +1,23 @@
+@import '../variables.scss';
+@import '../mixins/mq.scss';
+
 .flex-wrapper {
   display: flex;
+  h1 {
+    align-self: flex-start;
+    font-size: 9vmin;
+    line-height: 1;
+    padding: 0;
+    @include mq($S) {
+      font-size: 6vmin;
+    }
+  }
+  .align-center {
+    align-self: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .flex-wrapper-center {
@@ -14,11 +32,17 @@
 }
 
 .flex-half {
-  flex: 1;
+  flex: 1 1 auto;
+  align-self: center;
 }
 
 .flex-column {
   flex-direction: column
+}
+
+.flex-row {
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-center {
@@ -28,7 +52,8 @@
 }
 
 h1.flex-center {
-  font-size: vw !important;
+  font-size: 11vmin !important;
+  align-self: center;
 }
 
 .flex-item-center {
@@ -45,6 +70,9 @@ h1.flex-center {
   }
 }
 .flex-column-item-end {
-  margin-top: 100px;
-  align-self: center;
+  margin-top: auto;
+  align-self: flex-end;
+  text-align: center;
+  width: 100%;
+  min-height: 28px;
 }

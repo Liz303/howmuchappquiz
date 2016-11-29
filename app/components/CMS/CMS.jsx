@@ -23,7 +23,7 @@ export default class CMS extends React.Component {
   render() {
     return (
       <div className="text-container flex-wrapper flex-column">
-        <h1> Will you need a <Tooltip info="content management system"> cms </Tooltip>? </h1>
+        <h1 className="span-wrap"> Will you need a <Tooltip info="content management system"> cms </Tooltip> ? </h1>
         <RadioGroup
           data={this.data}
           selectedButton={this.props.state.quiz.selectedCMSRange}

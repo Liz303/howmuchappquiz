@@ -14,7 +14,7 @@ export default class Tooltip extends React.Component {
   render() {
     let tooltipClass=`tooltip ${this.state.show ? 'show' : 'hide'}`;
     return (
-      <span className="tooltip-wrapper"
+      <strong className="tooltip-wrapper"
             onMouseEnter={this.showTooltip.bind(this)}
             onMouseLeave={this.hideTooltip.bind(this)}>
         <div className={tooltipClass}>
@@ -23,7 +23,7 @@ export default class Tooltip extends React.Component {
           </div>
         </div>
         {this.props.children}
-      </span>
+      </strong>
     );
   }
 }
