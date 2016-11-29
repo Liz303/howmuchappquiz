@@ -13,9 +13,8 @@ export default class Product extends React.Component {
   }
 
   renderSelectOrNext() {
-    if (this.props.state.quiz.selectedProductRange && this.props.state.quiz.selectedProductRange !== null){
-      return <Link to="/revenue"> Next ➪ </Link>;
-    }
+    let nextClass = `next ${(this.props.state.quiz.selectedProductRange && this.props.state.quiz.selectedProductRange !== null) ? 'show' : 'hide'}`;
+    return <Link to="/revenue" className={nextClass}> Next ➪ </Link>;
   }
 
   render() {

@@ -14,10 +14,8 @@ export default class CMS extends React.Component {
   }
 
   renderSelectOrNext() {
-    console.log('cms ', this.props.state.quiz.cms);
-    if (this.props.state.quiz.cms !== undefined){
-      return <Link to="/results"> Next ➪ </Link>;
-    }
+    let nextClass = `next ${this.props.state.quiz.cms !== undefined ? 'show' : 'hide'}`;
+    return <Link to="/results" className={nextClass}> Next ➪ </Link>;
   }
 
   render() {

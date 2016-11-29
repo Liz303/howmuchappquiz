@@ -31,6 +31,12 @@ a {
     color: $orange;
     border: 4px solid $orange;
   }
+  &.show {
+    opacity: 1;
+  }
+  &.hide {
+    opacity: 0;
+  }
 }
 
 strong {

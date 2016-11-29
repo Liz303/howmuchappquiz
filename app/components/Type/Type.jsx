@@ -20,6 +20,7 @@ export default class Type extends React.Component {
     } else if (this.props.state.quiz.selectedType === 'store') {
       return <Link to='/products'> Next ➪</Link>;
     }
+    return <Link to='/products' className="next hide"/>;
   }
 
   render() {

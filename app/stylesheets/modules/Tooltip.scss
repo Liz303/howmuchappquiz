@@ -1,6 +1,7 @@
 .tooltip-wrapper {
   position: relative;
   color: $white;
+  display: inline-block;
   &:hover {
     cursor: pointer;
   }
@@ -14,8 +15,8 @@
 .radio-button-wrap {
   .tooltip-wrapper {
     .tooltip {
-      right: -35%;
-      top: -157px;
+      right: -28%;
+      bottom: 100%;
     }
   }
 }

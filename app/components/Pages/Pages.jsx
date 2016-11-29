@@ -14,9 +14,8 @@ export default class Pages extends React.Component {
   }
 
   renderSelectOrNext() {
-    if (this.props.state.quiz.selectedPageRange && this.props.state.quiz.selectedPageRange !== null){
-      return <Link to="/features"> Next ➪ </Link>;
-    }
+    let nextClass = `next ${(this.props.state.quiz.selectedPageRange && this.props.state.quiz.selectedPageRange !== null) ? 'show' : 'hide'}`;
+    return <Link to="/features" className={nextClass}> Next ➪ </Link>;
   }
 
   render() {

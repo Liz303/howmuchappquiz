@@ -13,9 +13,8 @@ export default class Revenue extends React.Component {
   }
 
   renderSelectOrNext() {
-    if (this.props.state.quiz.selectedRevenueRange && this.props.state.quiz.selectedRevenueRange !== null){
-      return <Link to="/pages"> Next ➪ </Link>;
-    }
+    let nextClass = `next ${(this.props.state.quiz.selectedRevenueRange && this.props.state.quiz.selectedRevenueRange !== null) ? 'show' : 'hide'}`;
+    return <Link to="/pages" className={nextClass}> Next ➪ </Link>;
   }
 
   render() {
