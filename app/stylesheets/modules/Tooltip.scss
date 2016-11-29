@@ -2,6 +2,8 @@
   position: relative;
   color: $white;
   display: inline-block;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+ -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
   &:hover {
     cursor: pointer;
   }
@@ -29,11 +31,14 @@
 
 .tooltip {
   position: absolute;
-  right: 0%;
-  top: -148px;
-  border-width: 0px 93px 151.2px;
-  width: 0px;
-  height: 0px;
+  bottom: 75%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: block;
+  opacity: 0;
+  border-width: 0px 100px 151.2px;
+  margin-left: -50px;
   border-style: inset;
   border-color: transparent transparent $gold transparent;
   float: left;
