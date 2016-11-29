@@ -30,18 +30,18 @@ var configs = {
       {
         test: /\.js(x)?$/,
         loaders: ['babel', 'eslint', 'webpack-strip-logs'],
-        exclude: /node_modules/ 
+        exclude: /node_modules/
       },
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
       },
-      { 
-        test: /\.(jpg|jpeg|png|gif|svg)$/, 
+      {
+        test: /\.(jpg|jpeg|png|gif|svg|ico)$/, 
         loaders: ['url?limit=25000', 'img']
       },
       {
-        test: /\.(eot|woff|woff2|ttf|svg)$/, 
+        test: /\.(eot|woff|woff2|ttf|svg)$/,
         loader: 'url?limit=20000'
       }
     ]
