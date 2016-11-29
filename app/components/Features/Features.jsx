@@ -3,13 +3,8 @@ import { Link } from 'react-router';
 import Checkbox from '../shared/Checkbox';
 
 export default class Features extends React.Component {
-  constructor(...args) {
-    super(...args);
-    this.data = [{value: '0-$50K'}, {value: '$50K'}, {value: '$1M'}, {value: '$100M+'}];
-  }
-
-  selectFeaturesRange(selected) {
-    this.props.actions.quiz.selectFeaturesRange(selected);
+  selectFeatures(selected, isChecked) {
+    this.props.actions.quiz.selectFeatures(selected, isChecked);
   }
 
   renderSelectOrNext() {
@@ -26,14 +21,38 @@ export default class Features extends React.Component {
         <h1> Choose the features your app should have? </h1>
         <div className="align-center flex-wrapper flex-row flex-wrap">
           <div className="flex-half">
-            <Checkbox> <h1> calendering / events </h1></Checkbox>
-            <Checkbox> <h1> api integrations </h1> </Checkbox>
-            <Checkbox> <h1> advertising </h1></Checkbox>
+            <Checkbox
+              selectItem={this.selectFeatures.bind(this)}
+              value='calendering'>
+              <h1> calendering / events </h1>
+            </Checkbox>
+            <Checkbox
+              selectItem={this.selectFeatures.bind(this)}
+              value='apiIntegration'>
+              <h1> api integrations </h1>
+            </Checkbox>
+            <Checkbox
+              selectItem={this.selectFeatures.bind(this)}
+              value='advertising'>
+              <h1> advertising </h1>
+            </Checkbox>
           </div>
           <div className="flex-half">
-            <Checkbox> <h1> custom design </h1> </Checkbox>
-            <Checkbox> <h1> blogging </h1> </Checkbox>
-            <Checkbox> <h1> other </h1></Checkbox>
+            <Checkbox
+              selectItem={this.selectFeatures.bind(this)}
+              value='design'>
+              <h1> custom design </h1>
+            </Checkbox>
+            <Checkbox
+              selectItem={this.selectFeatures.bind(this)}
+              value='blogging'>
+              <h1> blogging </h1>
+            </Checkbox>
+            <Checkbox
+              selectItem={this.selectFeatures.bind(this)}
+              value='other'>
+              <h1> other </h1>
+            </Checkbox>
           </div>
         </div>
         <div className="flex-column-item-end">

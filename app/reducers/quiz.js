@@ -62,16 +62,43 @@ export default function quiz(
       tracking: tracking
     };
   }
-  case SELECT_FEATURES:
-    return {
-      ...state,
-      apiIntegration: action.apiIntegration,
-      calendering: action.calendering,
-      blogging: action.blogging,
-      advertising: action.advertising,
-      design: action.design,
-      other: action.other,
-    };
+  case SELECT_FEATURES: {
+    let checked = action.isSelected;
+    switch (action.selectedItem) {
+    case 'apiIntegration':
+      return {
+        ...state,
+        apiIntegration: action.isSelected
+      };
+    case 'calendering':
+      return {
+        ...state,
+        calendering: checked
+      };
+    case 'advertising':
+      return {
+        ...state,
+        advertising: checked
+      };
+    case 'design':
+      return {
+        ...state,
+        design: checked
+      };
+    case 'blogging':
+      return {
+        ...state,
+        blogging: checked
+      };
+    case 'other':
+      return {
+        ...state,
+        other: checked
+      };
+    default:
+      return state;
+    }
+  }
   case CLEAR_RESULTS:
     return {
       ...state,

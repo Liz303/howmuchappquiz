@@ -11,14 +11,13 @@ export default class Results extends React.Component {
       defaultCost += 10000;
       if ( selectedProductRange === '50 - 100') { defaultCost += 5000; }
       else if ( selectedProductRange === '100 - 300') { defaultCost += 10000; }
-
+      else if ( selectedProductRange === '300+') { defaultCost += 15000; }
       if ( selectedRevenueRange === '$50K - $1M') { defaultCost += 20000; }
-      else if ( selectedRevenueRange === '$1M +') { defaultCost += 50000; }
+      else if ( selectedRevenueRange === '$1M+') { defaultCost += 50000; }
+      else if ( selectedRevenueRange === '$100M+') { defaultCost += 50000; }
     }
-
     if ( selectedPageRange === '3-5') { defaultCost += 5000; }
     else if ( selectedPageRange === '5+' ) { defaultCost += 10000; }
-
     if ( cms === true ) { defaultCost += 1000; }
     if ( userTracking === true ) { defaultCost += 5000; }
     if ( apiIntegration === true ) { defaultCost += 5000; }

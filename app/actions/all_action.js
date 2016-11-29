@@ -49,13 +49,11 @@ export function selectCms(cms) {
   };
 }
 
-export function selectFeatures(apiIntegration, calendering, blogging, interactivity) {
+export function selectFeatures(selectedItem, isSelected) {
   return {
     type: SELECT_FEATURES,
-    apiIntegration,
-    calendering,
-    blogging,
-    interactivity
+    selectedItem,
+    isSelected
   };
 }
 

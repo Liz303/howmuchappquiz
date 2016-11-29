@@ -13,7 +13,6 @@ export default class UserTracking extends React.Component {
   }
 
   renderSelectOrNext() {
-    console.log(this.props.state.quiz.tracking);
     if (this.props.state.quiz.tracking !== null){
       return <Link to="/cms"> Next ➪ </Link>;
     }

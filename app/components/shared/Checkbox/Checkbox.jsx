@@ -10,7 +10,9 @@ export default class Checkbox extends React.Component {
 
   toggleChecked(e) {
     e.target.checked;
-    this.setState({ isChecked: !this.state.isChecked });
+    this.setState({ isChecked: !this.state.isChecked }, () => {
+      this.props.selectItem(this.props.value, this.state.isChecked);
+    });
   }
 
   render() {
@@ -30,5 +32,7 @@ export default class Checkbox extends React.Component {
 }
 
 Checkbox.propTypes = {
-  children: React.PropTypes.array
+  children: React.PropTypes.object,
+  selectItem: React.PropTypes.func,
+  value: React.PropTypes.string
 };

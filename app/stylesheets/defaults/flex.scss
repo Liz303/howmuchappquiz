@@ -35,9 +35,6 @@
 .flex-half {
   flex: 1 1 auto;
   align-self: center;
-  @include mq($S) {
-    flex: 100%;
-  }
 }
 
 .flex-column {
